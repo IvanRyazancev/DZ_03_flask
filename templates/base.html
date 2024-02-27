@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Регистрация{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/register">Регистрация</a>
+        <a href="/login">Вход</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        <p>&copy; 2022 Ваше веб-приложение. Все права защищены.</p>
+    </footer>
+</body>
+</html>
